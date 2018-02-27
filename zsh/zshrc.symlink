@@ -21,3 +21,5 @@ POWERLINE_DETECT_SSH="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+. /usr/share/autojump/autojump.sh
