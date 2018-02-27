@@ -34,8 +34,18 @@ $ chsh -s `which zsh`
 
 ### 安裝其他程式
 ```shell
-$ sudo script/install
+$ sudo sh script/install
 ```
+
+### link dotfiles
+```shell
+$ ./script/bootstrap
+```
+
+### 安裝 powerline
+> 若使用其他內建主題則可跳過此步驟
+- 使用 omz theme，[oh-my-zsh-powerline-theme](https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme)
+- 安裝字體，[Powerline fonts](https://github.com/powerline/fonts)
 
 ---
 
