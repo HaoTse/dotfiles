@@ -102,23 +102,6 @@ link_file () {
   fi
 }
 
-install_homebrew () {
-  if test ! $(which brew)
-  then
-    echo "  Installing Homebrew for you..."
-
-    # Install the correct homebrew for each OS type
-    if test "$(uname)" = "Darwin"
-    then
-      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
-    then
-      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
-    fi
-
-  fi
-}
-
 install_ohmyzsh () {
   if [ ! -d ~/.oh-my-zsh ]
   then
@@ -139,21 +122,8 @@ install_dotfiles () {
   done
 }
 
-install_homebrew
 install_ohmyzsh
 install_dotfiles
-
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if source bin/dot
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
 
 echo ''
 echo '  All installed!'

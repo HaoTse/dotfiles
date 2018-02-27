@@ -8,7 +8,7 @@ $ apt-get install gcin
 
 ## Install git and vscode
 使用此 dotfiles 必須先安裝 git。
-```
+```shell
 $ apt-get install git
 ```
 - 另外推薦使用 visual studio code 編輯器，[Setup VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
@@ -22,15 +22,20 @@ $ git clone https://github.com/HaoTse/dotfiles ~/.dotfiles
 $ cd ~/.ditfiles
 ```
 
-### 安裝 zsh 和 oh-my-zsh
-```
-$ sh ubuntu/zsh.sh
+### 安裝 zsh
+```shell
+$ sudo sh script/zsh
 ```
 - 若重新開機後 shell 並未更換為 zsh，請自行重新更改 shell
 ```shell
 $ chsh -s `which zsh`
 ```
 > 可使用 `$ echo $SHELL` 確認目前 shell
+
+### 安裝其他程式
+```shell
+$ sudo script/install
+```
 
 ---
 
