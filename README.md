@@ -44,6 +44,9 @@ $ sudo sh script/install
 $ ./script/bootstrap
 ```
 
+### 選擇 powerfont 字體
+進入 terminal 尋找字體設定更改字體
+
 ---
 
 ## Reference
