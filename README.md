@@ -1,5 +1,7 @@
 # HaoTse's dotfiles
 
+目前只確認在 ubuntu 上沒有問題，在 macos 上待測試
+
 ## Install gcin
 若為中文使用者，推薦先安裝 gcin 輸入法。
 ```shell
@@ -15,7 +17,7 @@ $ apt-get install git
 
 ---
 
-## Install On Ubuntu
+## Install
 
 ```shell
 $ git clone https://github.com/HaoTse/dotfiles ~/.dotfiles
@@ -42,14 +44,11 @@ $ sudo sh script/install
 $ ./script/bootstrap
 ```
 
-### 安裝 powerline
-> 若使用其他內建主題則可跳過此步驟
-- 使用 omz theme，[oh-my-zsh-powerline-theme](https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme)
-- 安裝字體，[Powerline fonts](https://github.com/powerline/fonts)
-
 ---
 
 ## Reference
 - [Donbader's dotfiles](https://github.com/donbader/dotfiles)
 - [Amo Wu does dotfiles](https://github.com/amowu/dotfiles)
 - [bevacqua's dotfiles](https://github.com/bevacqua/dotfiles)
+
+- [powerlevel9k](https://github.com/bhilburn/powerlevel9k)
