@@ -4,4 +4,8 @@
 sudo apt-get install -y vim
 
 # autojump
-sudo apt-get install autojump
+sudo apt-get install -y autojump
+
+# pip
+sudo apt-get install -y python3-pip
+sudo apt-get install -y python-pip
