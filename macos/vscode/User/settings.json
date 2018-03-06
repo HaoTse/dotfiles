@@ -1,0 +1,8 @@
+{
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "window.zoomLevel": 1,
+    "typescript.check.npmIsInstalled": false,
+    "editor.fontSize": 15
+}
