@@ -1,9 +1,9 @@
 # HaoTse's dotfiles
 
-目前只確認在 ubuntu 上沒有問題，在 macos 上待測試
+> 目前只確認在 ubuntu 上沒有問題，在 macos 上待測試
 
-## Install gcin
-若為中文使用者，推薦先安裝 gcin 輸入法。
+## Install gcin (On ubuntu)
+若為 ubuntu 中文使用者，推薦先安裝 gcin 輸入法。
 ```shell
 $ apt-get install gcin
 ```
@@ -13,11 +13,11 @@ $ apt-get install gcin
 ```shell
 $ apt-get install git
 ```
-- 另外推薦使用 visual studio code 編輯器，[Setup VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
+- 推薦使用 visual studio code 編輯器，[Setup VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
 
 ---
 
-## Install
+## Run
 
 ```shell
 $ git clone https://github.com/HaoTse/dotfiles ~/.dotfiles
@@ -45,7 +45,24 @@ $ ./script/bootstrap
 ```
 
 ### 選擇 powerfont 字體
-進入 terminal 尋找字體設定更改字體
+進入 terminal 尋找字體設定更改使用 powerline 相關字體
+
+---
+## Ubuntu config
+- vscode
+
+---
+## Macos application support
+> 待完成，目前僅將 vscode  setting file 複製上來而已
+- iTerm2
+- Vscode
+- Alfred 3
+- webTorrent
+- vlc
+- chrome
+- homebrew
+- the-unarchiver
+- AppCleaner
 
 ---
 
