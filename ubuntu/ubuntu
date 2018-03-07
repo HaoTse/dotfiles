@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+#
+# links things.
+
+cd "$(dirname "$0")/apps"
+DOTFILES_ROOT=$(pwd -P)
+
+set -e
+
+echo ''
+
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+user () {
+  printf "\r  [ \033[0;33m?\033[0m ] $1 "
+}
+
+success () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
+fail () {
+  printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
+  echo ''
+  exit
+}
+
+link_apps () {
+  info '  Linking apps'
+
+  for src in $(find "$DOTFILES_ROOT" -maxdepth 1 -name '*.sh' -not -path '*.git*')
+  do
+    name="$(basename "${src%.*}")"
+    sh "$src"
+    success "linked $name"
+  done
+}
+
+link_apps
+
+echo ''
+echo '  All linkeded!'

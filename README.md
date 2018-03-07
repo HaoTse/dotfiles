@@ -49,7 +49,13 @@ $ ./script/bootstrap
 
 ---
 ## Ubuntu config
-- vscode
+進入到 ubuntu folder 內, 並執行 `ubuntu`
+```shell
+$ cd ubuntu
+$ ./ubuntu
+```
+### 同步 app
+- vscode (無同步 extensions)
 
 ---
 ## Macos application support
