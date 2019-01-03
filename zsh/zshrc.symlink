@@ -8,7 +8,7 @@ export TERM="xterm-256color"
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv anaconda user dir rbenv vcs dir_writable)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv anaconda user dir rbenv vcs dir_writable ssh)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs)
 POWERLEVEL9K_USER_DEFAULT_FOREGROUND="159"
 POWERLEVEL9K_ANACONDA_BACKGROUND="157"
@@ -28,4 +28,7 @@ source $ZSH/oh-my-zsh.sh
 . /usr/share/autojump/autojump.sh
 
 # added by Anaconda3 installer
-export PATH="$HOME/anaconda3/bin:$PATH" 
+export PATH="$HOME/anaconda3/bin:$PATH"
+
+# nvcc path
+export PATH=$PATH:/usr/local/cuda/bin
