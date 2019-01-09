@@ -1,5 +1,7 @@
 {
     "window.zoomLevel": 1,
     "terminal.integrated.fontFamily": "'Droid Sans Mono for Powerline'",
-    "python.linting.pylintArgs": ["--generate-memebers"],
+    "python.linting.pylintArgs": [
+        "--generate-memebers"
+    ],
 }
